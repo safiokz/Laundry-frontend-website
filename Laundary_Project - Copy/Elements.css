@@ -1,0 +1,152 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-right: 0;
+  margin-right: 0;
+}
+ 
+.navbar {
+  height: 90px;
+}
+
+
+/* Apply custom size only from lg (≥992px) and above */
+@media (min-width: 992px) {
+  #navbtn {
+    height: 90px;
+    width: 220px;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+.navbar-nav .nav-link {
+  margin-right: 20px;
+  /* color: #eeebeb !important; */
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 25px;
+
+
+}
+@media (min-width: 768px) {
+  .nav-right {
+    flex-direction: row !important;
+    align-items: center;
+
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #2e2f30;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    /* z-index: 999; */
+  }
+
+  .navbar-collapse .nav-link {
+    color: #fff !important;
+    padding: 10px 20px;
+  }
+  .navbar-collapse .nav-link:hover {
+    background-color: #444;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-link {
+    color: #000;
+  }
+}
+/* --- Moved from Blog.html style tag --- */
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+@media (min-width: 992px) {
+  .navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+/* Highlight active nav-link and dropdown-item with border */
+.navbar .nav-link.active,
+.navbar .dropdown-item.active {
+  border-bottom: 2.5px solid #007bff;
+  color: #007bff !important;
+  font-weight: 600;
+  background: #f8f9fa;
+}
+@media (max-width: 400px) {
+  .navbar-brand.ms-5 {
+    margin-left: 0 !important;
+  }
+  .navbar .container-fluid {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .navbar-toggler {
+    margin-right: 0 !important;
+  }
+  #navcall {
+    gap: 0.5rem !important;
+  }
+}
+/* --- End moved styles --- */
+
+
+/* Hero section start */
+#herosection{
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0.5, 0, 0, 0.3)), url("./images/hero2.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+}
+
+#herosection h1{
+    font-weight: 100px;
+   
+}
+ 
+/* footer section */
+
+#footersection{
+   padding-top:100px;
+   line-height: 35px;
+  
+}
+#footersection img{
+  height: 50px;
+  width:140px;
+}
+.social-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #f8f9fa; /* light bg */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  
+}
+
+.social-icon:hover {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  transform: scale(1.05); /* optional: slight zoom on hover */
+}
